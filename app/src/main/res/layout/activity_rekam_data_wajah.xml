@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RekamDataWajah">
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/frame_surface"
+        android:layout_width="match_parent"
+        android:layout_height="395dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/inputNama"
+            android:layout_width="340dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="424dp"
+            android:hint="Nama Siswa"
+            android:inputType="text"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/inputNIS"
+            android:layout_width="340dp"
+            android:layout_height="41dp"
+            android:layout_below="@id/inputNama"
+            android:layout_marginTop="28dp"
+            android:hint="NIS Siswa"
+            android:inputType="number"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputNama" />
+
+        <EditText
+            android:id="@+id/inputKelas"
+            android:layout_width="340dp"
+            android:layout_height="41dp"
+            android:layout_below="@id/inputNIS"
+            android:layout_marginTop="20dp"
+            android:hint="Kelas Siswa"
+            android:inputType="text"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputNIS" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputKelas"
+            android:layout_marginTop="596dp"
+            android:text="Rekam Wajah"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
